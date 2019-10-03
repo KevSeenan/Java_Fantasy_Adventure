@@ -1,3 +1,5 @@
+package players;
+
 import enums.Tool;
 import enums.Weapon;
 import org.junit.Before;

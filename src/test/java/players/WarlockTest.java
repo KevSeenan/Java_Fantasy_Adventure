@@ -1,3 +1,5 @@
+package players;
+
 import creatures.Dragon;
 import creatures.Ogre;
 import enums.Spell;
