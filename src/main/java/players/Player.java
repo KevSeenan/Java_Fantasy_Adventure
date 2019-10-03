@@ -2,7 +2,7 @@ package players;
 
 import behaviours.ISelect;
 
-public abstract class Player implements  ISelect {
+public abstract class Player {
 
     private int hp;
     private ISelect selectedItem;
@@ -12,5 +12,19 @@ public abstract class Player implements  ISelect {
         this.selectedItem = startingItem;
     }
 
+    public int getHp() {
+        return hp;
+    }
 
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public ISelect getSelectedItem() {
+        return selectedItem;
+    }
+
+    public void setSelectedItem(ISelect selectedItem) {
+        this.selectedItem = selectedItem;
+    }
 }
