@@ -27,4 +27,20 @@ public abstract class Player {
     public void setSelectedItem(ISelect selectedItem) {
         this.selectedItem = selectedItem;
     }
+
+    public void reduceHP(int damageValue){
+        if (damageValue >= this.hp){
+            this.hp = 0;
+        } else {
+            this.hp -= damageValue;
+        }
+    }
+
+    public void increaseHP(int healValue){
+        if (this.hp + healValue >= 100){
+            this.hp = 100;
+        } else {
+            this.hp += healValue;
+        }
+    }
 }
