@@ -69,6 +69,18 @@ public class WarlockTest {
     }
 
     @Test
+    public void canGetCreature() {
+        assertEquals(ogre, warlock.getCreature());
+    }
+
+    @Test
+    public void canChangeCreature() {
+        warlock.changeCreature(dragon);
+        assertEquals(dragon, warlock.getCreature());
+    }
+
+
+    @Test
     public void canGetCreatureHP__startsFull() {
         assertEquals(100, warlock.getCreatureHP());
     }

@@ -5,12 +5,12 @@ import behaviours.ISelect;
 import creatures.Creature;
 import enums.Spell;
 
-public class Warlock extends Player implements IChooseMagic {
+public class Wizard extends Player implements IChooseMagic {
 
     private String name;
     private Creature creature;
 
-    public Warlock(ISelect startingItem, String name, Creature creature) {
+    public Wizard(ISelect startingItem, String name, Creature creature) {
         super(startingItem);
         this.name = name;
         this.creature = creature;
